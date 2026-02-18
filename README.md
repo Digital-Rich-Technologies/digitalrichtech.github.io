@@ -6,10 +6,15 @@ Marketing site for **Venue Genius**, Digital Rich Technologies’ event staff co
 
 ## GitHub Pages
 
-The site is built for static hosting. To deploy to GitHub Pages:
+The site is set up for **GitHub Pages** and will be available at **https://digitalrichtech.github.io** once deployed.
 
-1. Run `pnpm run generate` (or `npm run generate`).
-2. Deploy the contents of `.output/public` to your `gh-pages` branch, or enable GitHub Actions with a static export workflow. For a repo named `digitalrichtech.github.io`, the site will be served at **https://digitalrichtech.github.io**.
+**One-time setup in the repo:**
+1. In GitHub: **Settings → Pages**
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+
+**Deploy:** Push to `main`; the workflow builds the static site and deploys it. No manual steps.
+
+**Local build:** Run `pnpm run generate`; output is in `.output/public`. You can preview with `pnpm run preview` (or `npx serve .output/public`).
 
 ## Setup
 
