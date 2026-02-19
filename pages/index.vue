@@ -1,17 +1,5 @@
 <template>
   <div class="page-home">
-    <!-- Trusted by - matches pricing page -->
-    <section class="trusted-by">
-      <div class="container">
-        <p class="trusted-by__text">Trusted by teams that run world-class events.</p>
-        <div class="trusted-by__logos">
-          <div v-for="i in 6" :key="i" class="trusted-by__logo-box" aria-hidden="true">
-            <span class="trusted-by__logo-label">Logo {{ i }}</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="hero">
       <div class="container">
         <p class="hero-product">Venue Genius — a product from Digital Rich Technologies</p>
@@ -36,6 +24,8 @@
         </ul>
       </div>
     </section>
+
+    <TrustedBy />
 
     <!-- Add-ons teaser - links to pricing -->
     <section class="addons-teaser">
@@ -68,36 +58,6 @@ useHead({
 
 <style scoped>
 .page-home { padding-bottom: 0; }
-
-.trusted-by {
-  padding: 2rem 0;
-  border-bottom: 1px solid #e5e7eb;
-  background: #fafafa;
-}
-.trusted-by__text {
-  text-align: center;
-  margin: 0 0 1rem;
-  font-size: 0.95rem;
-  color: var(--drt-text-muted);
-}
-.trusted-by__logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-.trusted-by__logo-box {
-  width: 120px;
-  height: 48px;
-  background: #e5e7eb;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #9ca3af;
-  font-size: 0.75rem;
-}
-.trusted-by__logo-label { opacity: 0.9; }
 
 .hero {
   padding: 3rem 0;

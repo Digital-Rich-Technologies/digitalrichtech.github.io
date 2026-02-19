@@ -26,6 +26,8 @@
       </div>
     </section>
 
+    <TrustedBy />
+
     <!-- Add-ons (separate from tiers) -->
     <section id="add-ons" class="addons-section">
       <div class="container container--wide">
